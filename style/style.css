@@ -38,13 +38,6 @@
     align-items: center;
 }
 
-
-
-
-
-
-
-
 .register-form {
     width:  50%;
     padding: 20px;
@@ -60,6 +53,7 @@
     color: #00c6fb;
     padding-bottom: 10px;
     border-bottom: 1px solid silver;
+    letter-spacing: 1px;
 }
 
 .register-form-content{
@@ -84,6 +78,7 @@
     color: #00c6fb;
     font-weight:bold ;
     margin: 5px 0;
+    letter-spacing: 1px;
 
 }
 .input-box input {
@@ -93,6 +88,7 @@
     border-radius: 10px;
     border: 1px solid #ccc;
     outline: none;
+    letter-spacing: 1px;
 
 }
 .input-box input:is(:focus , :valid){
