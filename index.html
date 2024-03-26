@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style/all.css">
+    <link rel="stylesheet" href="style/all.min.css">
+    <link rel="stylesheet" href="style/style.css">
+    <link rel="stylesheet" href="style/bootstrap.min.css">
+    <link rel="icon" href="imges/logo.png">
+    <!-- Swiper Link -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <title>Registration</title>
+
+</head>
+<body>
+    
+    <section class="register-parent">
+        <div class="row">
+
+            <div class="col-lg-5 col-md-12 register-img">
+                <img src="./imges/FormImg.png" alt="formImg">
+            </div>
+            
+            <div class="col-lg-7 col-md-12 register-box">
+                <section class="register-form">
+                    <form action="" method="post">
+                        <h2>Registration</h2>
+                        <div class="register-form-content">
+                            <div class="input-box">
+                                <label for="name">Full Name</label>
+                                <input type="text" placeholder="Enter your name..." name="name" required>
+                            </div>
+            
+                            <div class="input-box">
+                                <label for="TeamName">Team Name</label>
+                                <input type="text" placeholder="Enter your team name..." name="TeamName" required>
+                            </div>
+            
+                            <div class="input-box">
+                                <label for="email">Email</label>
+                                <input type="email" placeholder="Enter your email..." name="email" required>
+                            </div>
+            
+                            <div class="input-box">
+                                <label for="phone">Phone Number</label>
+                                <input type="text" placeholder="Enter your phone number..." name="phone" required>
+                            </div>
+            
+                            <div class="input-box">
+                                <label for="NationalId">National ID</label>
+                                <input type="text" placeholder="Enter your national id ..." name="NationalId" required>
+                            </div>
+            
+                            <div class="register-upload">
+                                <div class="register-upload-data">
+                                    <label for="personOne">Upload Member One ID</label>
+                                    <input type="file" name="personOne" required>
+                                </div>
+                                <div class="register-upload-data">
+                                    <label for="personTwo">Upload Member Two ID</label>
+                                    <input type="file" name="personTwo" required>
+                                </div>
+                                <div class="register-upload-data">
+                                    <label for="personThree">Upload Member Three ID</label>
+                                    <input type="file" name="personThree" required>
+                                </div>
+                                
+                            </div>
+                            <div class="btn-container">
+                                <button type="submit">Register</button>
+                            </div>
+            
+                        </div>
+                    </form>
+                </section>
+            </div>
+        </div>
+    </section>
+
+    
+
+
+    <!-- Include Bootstrap JS and jQuery -->
+    <script src="js/all.min.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/main.js"></script>
+
+</body>
+
+</html>

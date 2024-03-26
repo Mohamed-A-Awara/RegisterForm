@@ -1,0 +1,161 @@
+*{
+    padding:  0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.register-parent{
+    overflow: hidden;
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    flex-wrap: wrap;
+}
+/* Part One  */
+.register-img{
+    width: 100% ;
+    min-height : 100vh;
+    background-color : #116daa94;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    clip-path: circle(64.2% at 4% 50%);
+
+}
+.register-img img{
+    width: 70%;
+
+}
+
+
+/* Part Two */
+.register-box{
+    width: 100%;
+    min-height: 100vh;
+    /* background-color: aqua; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+
+
+
+
+
+.register-form {
+    width:  50%;
+    padding: 20px;
+    margin: 0 20px;
+    border-radius: 10px;
+    margin: 0 auto;
+    border: 1px solid #00c6fb;
+}
+.register-form h2 {
+    font-size: 25px;
+    font-weight: 600;
+    text-align: left;
+    color: #00c6fb;
+    padding-bottom: 10px;
+    border-bottom: 1px solid silver;
+}
+
+.register-form-content{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 20px 0;
+}
+
+.register-form-content .input-box{
+    display: flex;
+    flex-wrap: wrap;
+    width: 50%;
+    padding-bottom: 15px;
+
+}
+.input-box:nth-child(2n){
+    justify-content: end;
+}
+.input-box label ,.register-upload-data label{
+    width: 95%;
+    color: #00c6fb;
+    font-weight:bold ;
+    margin: 5px 0;
+
+}
+.input-box input {
+    height: 40px ;
+    width: 95%;
+    padding: 0 10px;
+    border-radius: 10px;
+    border: 1px solid #ccc;
+    outline: none;
+
+}
+.input-box input:is(:focus , :valid){
+    box-shadow: 0 3px 6px rgba(0,0,0,0.2);
+}
+.register-upload{
+    display: flex;
+    flex-wrap: wrap;
+}
+.register-upload-data input{
+    margin-bottom: 10px;
+    padding: 5px;
+    cursor: pointer;
+}
+.btn-container {
+    margin: 15px 0;
+    width: 100%;
+
+}
+.btn-container button{
+    width: 100%;
+    margin-top: 10px ;
+    padding: 10px ;
+    display: block;
+    font-size: 20px;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    background-image: linear-gradient(to right , #aa076b , #61045f);
+    transition:  1s;
+
+}
+.btn-container button:hover{
+    background-image: linear-gradient(to right , #00c6fb ,#116daa );
+}
+
+
+/* Responsive  */
+@media (max-width : 600px){
+    .register-img{
+        min-height: 45vh;
+        clip-path: circle(60.2% at 51% 3%);
+        flex-direction: column;
+    }
+    .register-box{
+        margin-top: -70px !important;
+    }
+    .register-form {
+        width: 95%;
+        margin: 0 auto;
+    }
+    .register-form-content{
+        max-height: 100vh;
+    }
+    .input-box {
+        width: 100% !important;
+        margin-right: 12px;
+    }
+    .input-box input{
+        display: block;
+        width: 100% !important;
+    }
+    .input-box:nth-child(2n){
+        justify-content: space-between;
+    }
+}
